@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Car List
+    <h1>
+        <div>
+            <table border="1">
+                <tr>
+                    <th>Id</th>
+                    <th>Model</th>
+                    <th>Num</th>
+                </tr>
+                <tr th:each="msg : ${massage}">
+                    <td th:text="${msg.getId()}"></td>
+                    <td th:text="${msg.getModel()}"></td>
+                    <td th:text="${msg.getNum()}"></td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>
